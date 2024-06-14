@@ -23,6 +23,10 @@ parameterized = "*"
 pytest = "^7"
 pytest-mock = "*"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
 [tool.coverage.run]
 omit = [
     "tests/*"
