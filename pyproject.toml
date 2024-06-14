@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "oci-ai-code-academy"
+version = "0.1.0"
+description = "This repository includes code related to the OCI Generative AI Certification Course"
+license = "Apache-2.0"
+authors = ["Quentin Reul <Quentin.H.Reul@gmail.com>"]
+readme = "README.md"
+keywords = ["oracle", "oci ai", "generative ai"]
+
+[project.urls]
+"Source Code" = "https://github.com/qhreul/oci-ai-code-academy"
+"Bug Tracker" = "https://github.com/qhreul/oci-ai-code-academy/issues"
+
+[tool.poetry.dependencies]
+oci = "^2.128"
+python = "^3.11"
+python-dotenv = "^1"
+
+[tool.poetry.group.test.dependencies]
+coverage = "*"
+mock = "*"
+parameterized = "*"
+pytest = "^7"
+pytest-mock = "*"
+
+[tool.coverage.run]
+omit = [
+    "tests/*"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
