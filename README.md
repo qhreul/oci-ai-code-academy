@@ -52,8 +52,9 @@ _Populating `.env` file_
 | **Name**             | **Description**                                                                            |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `OCI_COMPARTMENT_ID` | Identifier of the compartment grouping Oracle Cloud Infrastructure (OCI) resources.        |
+| `OCI_REGION`         | Region in which the Oracle Cloud Infrastructure services are accessed                      |
 | `OCI_CONFIG_PROFILE` | Oracle Cloud Infrastructure CLI profile containing credentials to access the user account. |
-| `OCI_ENDPOINT`       | Oracle Cloud Infrastructure endpoint to access Generative AI inference models.             |
+| `OCI_GENAI_ENDPOINT` | Oracle Cloud Infrastructure endpoint to access Generative AI inference models.             |
 
 **Note**: As prerequisite to setting the OCI CLI profile, the following steps are required:
 1. Install the [OCI Command Line Interface (CLI)](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm) on your machine
