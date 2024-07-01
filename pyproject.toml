@@ -12,9 +12,17 @@ keywords = ["oracle", "oci ai", "generative ai"]
 "Bug Tracker" = "https://github.com/qhreul/oci-ai-code-academy/issues"
 
 [tool.poetry.dependencies]
-oci = "^2.128"
+chromadb = "^0.5"
+llama-index = "^0.10"
+llama-index-embeddings-oci-genai = "^0.1"
+llama-index-llms-oci-genai = "^0.1"
+llama-index-vector-stores-chroma = "^0.1"
+oci = "^2.129"
+pydantic = "^2.8"
+pypdf = "^4.2"
 python = "^3.11"
 python-dotenv = "^1"
+streamlit = "^1.36"
 
 [tool.poetry.group.test.dependencies]
 coverage = "*"
@@ -22,7 +30,6 @@ mock = "*"
 parameterized = "*"
 pytest = "^7"
 pytest-mock = "*"
-
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.4"
